@@ -1,0 +1,25 @@
+:root{
+    /* Color */
+    --primary : #1F3986;
+    --secondary : #c4c4c4;
+    --white : #fff;
+    --black : black;
+
+    /* Margin */
+    --margin : 0;
+    --margin-100 : 100px;
+    --margin-200 : 200px;
+    --margin-500 : 500px;
+
+    /* Padding */
+    --padding : 0;
+    --padding-10 : 10px;
+    --padding-100 : 100px;
+    --padding-200 : 200px;
+    --padding-500 : 500px;
+
+    /* Font */
+    --quicksand : 'Quicksand', sans-serif;
+    --arial : 'Arimo', sans-serif;
+
+}

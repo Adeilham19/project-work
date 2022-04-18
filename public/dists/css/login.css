@@ -1,0 +1,105 @@
+@import url('root.css');
+
+@media screen and (min-width: 1200px){
+    :root{
+        --quicksand : 'Quicksand', sans-serif; 
+    }
+    
+    body{
+        background-image: url('../../img/bg.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 40vmax;
+        overflow-x: hidden;
+    }
+    /* Judul */
+    .h1{
+        font-family: var(--quicksand);
+    }
+    p{
+        font-family: var(--quicksand);
+    }
+    
+    .container .col-lg-12 .row .col-lg-8 .h1{
+        position: relative;
+        margin: auto;
+        top: 145px;
+        left: 10%;
+        font-size: 50px;
+        translate: (50%, 50%);
+    }
+
+    .container .col-lg-12 .row .col-lg-8 p{
+        position: relative;
+        left: 15%;
+        top: 150px;
+        font-size: 15px;
+    }
+    
+    /* Form */
+    .container .col-lg-12 .row .col-lg-8{
+        position: relative;
+        margin: 0 auto;
+        left: 20%;
+        translate: (-50%, -50%);    
+    }
+    
+    .container .col-lg-12 .row .col-lg-8 form{
+        position: relative;
+        margin: 0 auto;
+        left: 8%;
+        top: 200px;    
+    }
+    
+    .container .col-lg-12 .row .col-lg-8 .mb-3{
+        width: 50%;
+    }
+
+    form .form-control{
+        display: flex;
+        height: 60px;
+        border: none;
+        box-shadow: black;
+        background: none;
+        background-color: #C4C4C4;
+    }
+
+    input#username {
+        background-image: url('../../img/user-2.png');
+        background-size: 40px;
+        background-position: 15px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+        /* Extra Styling */
+        padding: 5px 50px;
+        transition:0.3s;
+    }
+
+    input#password {
+        background-image: url('../../img/padlock-4.png');
+        background-size: 40px;
+        background-position: 15px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+        /* Extra Styling */
+        padding: 5px 50px;
+        transition:0.3s;
+    }
+
+    .login-button{
+        width: 50%;
+        height: 45px;
+        border-radius: 6px;
+        margin-top: 20px;
+    }
+
+    .admin-href{
+        margin-top: -140px;
+        margin-left: -155px !important;
+        padding: 10px;
+    }  
+        
+
+
+}    
+

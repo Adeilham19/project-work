@@ -1,0 +1,67 @@
+@import url('root.css');
+
+@media screen and (min-width: 1000px){
+    :root{
+        --quicksand : 'Quicksand', sans-serif; 
+    }
+
+
+    .navbar-nav .active{
+        color: white !important;
+        background-color: #E47710 !important;
+        border-radius: 10px;      
+    }
+    .navbar-nav{
+        gap: 25px;
+    }
+
+    form .search{
+        border: none;   
+        background: none;
+    }
+
+    form .search:focus{
+        box-shadow: none;
+        background: none;
+    }
+
+    
+    .dropdown button:focus{
+        box-shadow: none !important;
+    }
+
+    /*Breadcrumb*/
+    .breadcrumb {
+        border-radius: 6px;
+        overflow: hidden;
+        width: 100px;
+        height: 30px;
+        transform: translateY(-50%);
+        box-shadow: 0 1px 1px black, 0 4px 14px rgba(0, 0, 0, 0.7);
+        background-color: #1f3986;
+        font-size: 12px;
+        position: relative;
+        top: 80px;
+      }
+      
+    .breadcrumb a {
+        position: relative;
+        flex-grow: 1;
+        text-decoration: none;
+        margin: auto;
+        height: 100%;
+        padding-top: 5px;
+        padding-right: 5px;
+        color: white;
+      }
+
+    .breadcrumb img {
+        position: relative;
+        padding: 7px;
+        margin-top: -6px;
+        margin-right: -5px;
+        height: 30px;
+        width: 30px;
+    }
+}
+      

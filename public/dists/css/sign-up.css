@@ -1,0 +1,104 @@
+@import url('root.css');
+
+@media screen and (min-width: 1200px){
+    *{
+        font-family: var(--quicksand);
+    }
+    body{
+        background-image: url('../../img/bg.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 40vmax;
+        overflow-x: hidden;
+    }
+    /* Judul */
+    .container .col-lg-12 .row .col-lg-8 .h1{
+        position: relative;
+        margin: auto;
+        top: 80px;
+        left: 47%;
+        font-size: 60px;
+        translate: (50%, 50%);
+    }
+
+    .container .col-lg-12 .row .col-lg-8 p{
+        position: relative;
+        left: 50.5%;
+        top: 85px;
+        font-size: 15px;
+    }
+
+    /* Forms */
+    form .form-control{
+        height: 60px;
+        border: none;
+        background-color: #C4C4C4;
+        margin-top: 15px;
+        
+    }
+
+    form .form-control::placeholder{
+        color:var(--black);
+    }
+
+    .container .col-lg-12 .row .col-lg-8 form{
+        position: relative;
+        margin: 0 auto;
+        left: 30%;
+        top: 110px;
+        border-radius: 20px;
+        translate: (-50%, -50%);    
+    }
+
+    input#inputEmail {
+        background-image: url('../../img/icons8-email-100.png');
+        background-size: 40px;
+        background-position: 15px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+        /* Extra Styling */
+        padding: 5px 50px;
+        transition:0.3s;
+    }
+
+    input#password {
+        background-image: url('../../img/padlock-4.png');
+        background-size: 40px;
+        background-position: 15px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+        /* Extra Styling */
+        padding: 5px 50px;
+        transition:0.3s;
+    }
+
+    input#confirm-password {
+        background-image: url('../../img/Group.png');
+        background-size: 30px;
+        background-position: 20px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+        /* Extra Styling */
+        padding: 5px 50px;
+        transition:0.3s;
+    }
+    
+
+    .sign-up-button{
+        width: 42%;
+        height: 45px;
+        border-radius: 6px;
+        margin-left: 710px;
+        margin-top: -90px;
+        background-color: var(--primary) !important;
+        color: var(--white) !important;
+    }
+
+    .have-account{
+        margin-left: 710px;
+        margin-top: -30px;
+    }
+
+
+
+}    

@@ -1,0 +1,215 @@
+@import url('root.css');
+
+@media screen and (min-width: 1000px){
+    :root{
+        --quicksand : 'Quicksand', sans-serif; 
+    }
+
+    body{
+        min-height: 2000px;
+    }
+
+ 
+
+    form .search{
+        border: none;   
+        background: none;
+    }
+
+    form .search:focus{
+        box-shadow: none;
+        background: none;
+    }
+
+    
+    .dropdown button:focus{
+        box-shadow: none !important;
+    }
+
+    /*carousel*/
+    .slider-hero{
+        width: 1250px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 1px;
+        color: white;
+    }
+
+    .slide{
+        padding: 50px;
+    }
+
+    .slide .kotak{
+        transition: all 0.2s ease;
+        background: #dcdcdc;
+        width: 100%;
+        height: 150px;
+        border-radius: 9px;
+    }
+
+    .slide.slick-center .kotak{
+        background: #dcdcdc;
+        transform: translate(-70px, 0px);
+        width: calc(100% + 140px);
+        max-width: initial;
+    }
+
+    #homepage-slider .slider-arrow ul {
+        list-style-type: none;
+    }
+
+    #homepage-slider .slider-arrow .prev{
+        position: absolute;
+        top: 200px;
+        left: 75px;
+        cursor: pointer;
+    }
+
+    #homepage-slider .slider-arrow .next{
+        position: absolute;
+        top: 200px;
+        right: 75px;
+        cursor: pointer;
+    }
+
+    /*category*/
+    .button-category{
+        border: none;
+        border-radius: 10px;
+        background-color: #1F3986;
+        color: white;
+        width: 150px;
+        height: 50px;
+        transition: transform 0.5s;
+    }
+    
+    .button-category:hover{
+        transform: scale(1.3); /*130% zoom out*/
+        color: white;
+        font-weight: bold;
+        
+    }
+}
+
+/*Rekomendasi Buku*/
+    .box{
+        width: 270px;
+        height: 420px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px;
+        
+    }
+
+    .slide-img{
+        height: 275px;
+        position: relative;
+    }
+
+    .slide-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+
+    }
+
+    .detail-box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .type{
+        display: flex;
+        flex-direction: column;
+    }
+    .type h5{
+        margin: 0px 0px 0px 30px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding-left: 7px;
+    }
+
+    .type p{
+        margin: 5px 0px 0px 30px;
+        letter-spacing: 0.5px;
+        padding-left: 7px;
+    }
+
+    .overlay{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+    }
+
+
+    .read-btn{
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffff;
+        color: #252525;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+    }
+
+    .read-btn:hover{
+        color: #fff;
+        background-color: #E47710;
+        transition: all ease 0.3s;
+        transform: scale(1.2); /*20% zoom out*/
+        font-weight: bold;
+            
+    }
+
+    .btn-baca{
+        border: none;
+        border-radius: 10px;
+        background-color: #e47710;
+        color: white;
+        width: 200px;
+        height: 35px;
+        margin: 10px 0px 0px 35px;
+    }
+
+    .btn-baca:hover{
+        color: #fff;
+    }
+
+
+    .overlay{
+        visibility: hidden;
+    }
+
+    .slide-img:hover .overlay{
+        visibility: visible;
+        animation: fade 0.5s;
+    }
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
